@@ -6,7 +6,7 @@ import (
 
     "github.com/gin-gonic/gin"
 
-    "stock-alert-backend/internal/utils"
+    "github.com/jeanpic/stock-alert-backend/internal/utils"
 )
 
 func RegisterHandlers(router *gin.Engine) {

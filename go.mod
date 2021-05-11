@@ -1,4 +1,4 @@
-module stock-alert-backend
+module github.com/jeanpic/stock-alert-backend
 
 go 1.15
 
