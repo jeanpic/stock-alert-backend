@@ -1,17 +1,17 @@
 package utils 
 
 import (
+    "encoding/json"
     "fmt"
-    "io"
+    "github.com/PuerkitoBio/goquery"
+    "io/ioutil"
     "log"
-    "net/url"
     "net/http"
-    "time"
+    "net/url"
     "strconv"
     "strings"
     "sync"
-    "encoding/json"
-    "github.com/PuerkitoBio/goquery"
+    "time"
 )
 
 type Asset struct {
@@ -235,7 +235,7 @@ func GetEODTicks(symbol string, days string) (*EODTicksObject, error) {
     }
     var ticks EODTicksObject
 
-    body, err := io.ReadAll(res.Body)
+    body, err := ioutil.ReadAll(res.Body)
     if err != nil {
         return nil, err
     }

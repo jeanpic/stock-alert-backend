@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"github.com/jeanpic/stock-alert-backend/internal/api"
+	"net/http"
 )
 
 func main() {
